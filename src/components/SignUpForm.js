@@ -121,7 +121,7 @@ function SignUpForm() {
       .get(
         "https://my-json-server.typicode.com/adibjadidi/form-server-api/users"
       )
-      .then((res) => setFormData(res.data))
+      .then((res) => setFormData(res.data[0]))
       .catch((err) => console.log(err));
   }, []);
 
