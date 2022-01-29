@@ -118,7 +118,9 @@ function SignUpForm() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/users/1")
+      .get(
+        "https://my-json-server.typicode.com/adibjadidi/form-server-api/users"
+      )
       .then((res) => setFormData(res.data))
       .catch((err) => console.log(err));
   }, []);
